@@ -27,10 +27,10 @@
           <!-- nav list -->
           <ul class="list">
             <li class="nav-item">
-              <a href="./index.html" class="nav-link">Студия</a>
+              <a href="./index.html" class="nav-link current">Студия</a>
             </li>
             <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link current">Портфолио</a>
+              <a href="./portfolio.html" class="nav-link">Портфолио</a>
             </li>
             <li class="nav-item"><a href="" class="nav-link">Контакты</a></li>
           </ul>
@@ -40,17 +40,19 @@
         <ul class="contact list">
           <li class="cont-items">
             <!-- знак конверта можно вставить кодом: &#9993; -->
-            <a href="mailto:info@devstudio.com" class="contacts">
-              <img
-                src="images/envelope.svg"
-                alt="почтовый конверт"
-              />info@devstudio.com</a
+            <a href="mailto:info@devstudio.com" class="contacts mail">
+              <svg class="icon-contact" width="16" height="11">
+                <use href="./images/symbol-defs.svg#icon-envelope"></use>
+              </svg>
+              info@devstudio.com</a
             >
           </li>
           <li class="cont-items">
-            <a href="tel:+380961111111" class="contacts">
-              <img src="images/smartphone.svg" alt="телефон" />+38 096 111
-              1111</a
+            <a href="tel:+380961111111" class="contacts tel">
+              <svg class="icon-contact" width="10" height="15">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 1111</a
             >
           </li>
         </ul>
@@ -313,40 +315,32 @@
           <ul class="list">
             <li class="link-items">
               <!-- aria-label="... link" вместо изображения-->
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-links"
-                ><img src="images/instagram2.svg" alt="логотип инстаграмма"
-              /></a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-footer-links" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-instagram2"></use>
+                </svg>
+              </a>
             </li>
             <li class="link-items">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-links"
-                ><img src="images/twitter2.svg" alt="логотип твиттера"
-              /></a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-footer-links" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-twitter2"></use>
+                </svg>
+              </a>
             </li>
             <li class="link-items">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-links"
-                ><img src="images/facebook2.svg" alt="логотип фейсбука"
-              /></a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-footer-links" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-facebook2"></use>
+                </svg>
+              </a>
             </li>
             <li class="link-items">
-              <a
-                href=""
-                target="_blank"
-                rel="noopener noreferrer"
-                class="footer-links"
-                ><img src="images/linkedin2.svg" alt="логотип линкделина"
-              /></a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <svg class="icon-footer-links" width="20" height="20">
+                  <use href="./images/symbol-defs.svg#icon-linkedin2"></use>
+                </svg>
+              </a>
             </li>
           </ul>
         </div>
@@ -356,7 +350,10 @@
           <h3 class="title">Подпишитесь на рассылку</h3>
           <input type="email" name="email" id="email" placeholder="E-mail" />
           <button type="submit" class="button">
-            Подписаться <img src="images/icon_send.svg" alt="самолетик" />
+            Подписаться
+            <svg class="button-icon">
+              <use href="./images/symbol-defs.svg#icon-send"></use>
+            </svg>
           </button>
         </div>
       </div>
